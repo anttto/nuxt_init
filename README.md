@@ -1,8 +1,6 @@
 ## Nuxt3 ESLINT & PRETTIER Minimal Starter
 
-### 세팅 방법 (프로젝트 소스)
-
-<br></br>
+### 1. 프로젝트 소스 세팅
 
 #### 1. NUXT기반 eslint & prettier 모듈 및 플러그인 설치
 
@@ -40,7 +38,7 @@ export default defineNuxtConfig({
 
 <br></br>
 
-## 세팅 방법 (VSCODE)
+## 2. VSCODE 세팅
 
 > - formatter 설정 : 컨트롤(커멘트) + , 로 진입 후 prettier 로 설정
 > - 컨트롤(커멘트) + , 로 진입 후 'Code Actions On Save' 입력 후 '텍스트 편집기 탭 클릭' -> setting.json 들어가서 수정
