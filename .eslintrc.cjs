@@ -42,6 +42,10 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'no-dupe-keys': 'off',
+    camelcase: 'off',
+
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
@@ -70,16 +74,23 @@ module.exports = {
     ],
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     'vue/no-setup-props-destructure': 'off',
+    'vue/multi-word-component-names': 'off',
     'max-len': [
       'warn',
-      100,
+      140,
       2,
       {
         ignoreUrls: true,
-        ignoreComments: false,
+        ignoreComments: true,
         ignoreRegExpLiterals: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
+      },
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
       },
     ],
   },
