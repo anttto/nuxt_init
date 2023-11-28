@@ -10,8 +10,6 @@
 npm i -D @nuxtjs/eslint-config-typescript @nuxtjs/eslint-module @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-<br></br>
-
 ```bash
 npm i -D eslint prettier typescript eslint-config-airbnb-base eslint-config-prettier eslint-plugin-nuxt eslint-plugin-prettier eslint-plugin-vue
 ```
