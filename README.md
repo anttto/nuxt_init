@@ -1,16 +1,20 @@
-# Nuxt3 ESLINT & PRETTIER Minimal Starter
+## Nuxt3 ESLINT & PRETTIER Minimal Starter
 
-## 세팅 방법 (소스)
+### 세팅 방법 (프로젝트 소스)
+
+#### 1. NUXT기반 eslint & prettier 모듈 및 플러그인 설치
+
+> > package.json 의 devDependencies 리스트 복사 후 npm install 해도 무방
 
 ```bash
-
-# NUXT 기반 eslint & prettier 모듈 및 플러그인 설치
-
 npm i -D @nuxtjs/eslint-config-typescript @nuxtjs/eslint-module @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
 
+```bash
 npm i -D eslint prettier typescript eslint-config-airbnb-base eslint-config-prettier eslint-plugin-nuxt eslint-plugin-prettier eslint-plugin-vue
+```
 
-*package.json 의 devDependencies 리스트 복사 후 npm install 해도 무방
+```bash
 
 # eslint 설정 파일 생성 및 내용 삽입
 .eslintrc.cjs
@@ -30,9 +34,11 @@ export default defineNuxtConfig({
 
 ## 세팅 방법 (VSCODE)
 
+> > 1.  formatter 설정 : 컨트롤(커멘트) + , 로 진입 후 prettier 로 설정
+> > 2.  컨트롤(커멘트) + , 로 진입 후 'Code Actions On Save' 입력 후 '텍스트 편집기 탭 클릭' -> setting.json 들어가서 수정
+
 ```bash
-# 1. formatter 설정 : 컨트롤(커멘트) + , 로 진입 후 prettier 로 설정
-# 2. 컨트롤(커멘트) + , 로 진입 후 'Code Actions On Save' 입력 후 '텍스트 편집기 탭 클릭' -> setting.json 들어가서 수정
+
 "editor.codeActionsOnSave": {
         "source.fixAll":true
     },
