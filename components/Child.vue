@@ -21,7 +21,7 @@ const props = defineProps({
   },
 });
 const { propData } = props;
-const emit = defineEmits(['newItem']);
+const emit = defineEmits(['newObj']);
 
 // 부모에게 받은 Props Data를 특정한 상황에 따라 가공하여 부모로 올려야 하는 경우
 const computedItem = computed({
