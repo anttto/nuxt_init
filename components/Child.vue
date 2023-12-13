@@ -31,7 +31,7 @@ const computedItem = computed({
   },
   // 2.(읽기전용)인 computed를 가공하여 다시 반환하는 경우
   set(newItem) {
-    emit('newItem', newItem);
+    emit('newObj', newItem);
   },
 });
 

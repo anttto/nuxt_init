@@ -6,7 +6,7 @@
         {{ data.items.length }}
       </em>
     </h3>
-    <Child :prop-data="data" @new-item="handleAddItem" />
+    <Child :prop-data="data" @new-obj="handleAddItem" />
   </div>
 </template>
 
@@ -18,9 +18,9 @@ const data = reactive({
   items: ['양손검', '십자방패'],
 });
 
-const handleAddItem = (newHobby: string) => {
-  console.log('Emit Data :', newHobby);
-  data.items = [...data.items, newHobby];
+const handleAddItem = (newItem: string) => {
+  console.log('Emit Data :', newItem);
+  data.items = [...data.items, newItem];
 };
 </script>
 
