@@ -16,14 +16,14 @@ npm run build
 <img width="640" alt="image" src="https://github.com/anttto/nuxt_init/assets/57241573/bc5190ed-7060-4fda-b5a4-9887e313b778">
 
 
-<br>
+<br></br>
 
 
 ## Nuxt3 ESLINT & PRETTIER Minimal Starter
 
 ### 1. 프로젝트 소스 세팅
 
-#### 1. NUXT기반 eslint & prettier 모듈 및 플러그인 설치
+#### (1) NUXT기반 eslint & prettier 모듈 및 플러그인 설치
 
 > package.json 의 devDependencies 리스트 복사 후 npm install 해도 무방
 
@@ -37,6 +37,7 @@ npm i -D eslint prettier typescript eslint-config-airbnb-base eslint-config-pret
 
 <br></br>
 
+#### (2) NUXT기반 eslint & prettier 모듈 및 플러그인 설치
 ```bash
 
 # eslint 설정 파일 생성 및 내용 삽입
