@@ -1,3 +1,24 @@
+## NUXT3 Study
+
+```bash
+# Setup
+npm install
+
+# Dev (dev mode)
+npm run dev
+
+# Build (production mode)
+npm run build
+```
+
+### Props & Emit (with Computed) 
+> 부모와 자식 컴포넌트 간의 유연하고 효율적인 데이터 전달을 목적으로 함 
+<img width="640" alt="image" src="https://github.com/anttto/nuxt_init/assets/57241573/bc5190ed-7060-4fda-b5a4-9887e313b778">
+
+
+<br>
+
+
 ## Nuxt3 ESLINT & PRETTIER Minimal Starter
 
 ### 1. 프로젝트 소스 세팅
