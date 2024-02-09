@@ -19,6 +19,7 @@ const data = reactive({
 });
 
 const handleAddItem = (newItem: string) => {
+  console.log('Emit Data :', newItem);
   data.items = [...data.items, newItem];
 };
 </script>
