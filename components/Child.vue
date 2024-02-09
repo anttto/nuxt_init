@@ -1,6 +1,6 @@
 <template>
-  <div style="background-color: #eee; padding: 1rem">
-    <h2>아이템 추가하기</h2>
+  <div class="bg-indigo-200 p-5">
+    <h2 class="text-2xl">아이템 추가하기</h2>
     <ul>
       <li v-for="(obj, idx) in computedItem" :key="idx">{{ obj }}</li>
     </ul>
@@ -8,6 +8,13 @@
       <input v-model="newItemName" type="text" />
       <button type="submit">부모에게 데이터 올리기 (Emit)</button>
     </form>
+    <br />
+    <img src="/aa.png" width="400" />
+    <img src="/aa.png" width="300" />
+    <img src="/aa.png" width="140" />
+    <NuxtImg src="/aa.png" sizes="100vw sm:400px" quality="50" loading="lazy" @load="lazy" />
+    <NuxtImg src="/aa.png" sizes="100vw sm:500px" quality="70" loading="lazy" @load="lazy" />
+    <NuxtImg src="/aa.png" sizes="100vw sm:700px" quality="100" loading="lazy" @load="lazy" />
   </div>
 </template>
 
@@ -39,6 +46,10 @@ const computedItem = computed({
 const handleAddItem = () => {
   computedItem.value = newItemName.value;
   newItemName.value = '';
+};
+
+const lazy = () => {
+  console.log('lazy loading..');
 };
 </script>
 
