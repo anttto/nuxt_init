@@ -15,7 +15,7 @@ import { reactive } from 'vue';
 
 const data = reactive({
   name: '도사은',
-  items: ['양손검', '십자방패'],
+  items: ['양손검2', '십자방패2'],
 });
 
 const handleAddItem = (newItem: string) => {
