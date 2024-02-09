@@ -12,8 +12,14 @@
     <img src="/aa.png" width="400" />
     <img src="/aa.png" width="300" />
     <img src="/aa.png" width="140" />
-    <NuxtImg src="/aa.png" sizes="100vw sm:400px" quality="100" loading="lazy" @load="lazy" />
-    <NuxtImg src="/aa.png" sizes="100vw sm:600px" quality="100" loading="lazy" @load="lazy" />
+    <br />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <br />
+    <NuxtImg src="/bb.png" sizes="100vw sm:400px" quality="100" loading="lazy" @load="lazy" />
+    <NuxtImg src="/bb.png" sizes="100vw sm:300px" quality="100" loading="lazy" @load="lazy" />
   </div>
 </template>
 
