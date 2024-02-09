@@ -12,9 +12,8 @@
     <img src="/aa.png" width="400" />
     <img src="/aa.png" width="300" />
     <img src="/aa.png" width="140" />
-    <NuxtImg src="/aa.png" sizes="100vw sm:400px" quality="50" loading="lazy" @load="lazy" />
-    <NuxtImg src="/aa.png" sizes="100vw sm:500px" quality="70" loading="lazy" @load="lazy" />
-    <NuxtImg src="/aa.png" sizes="100vw sm:700px" quality="100" loading="lazy" @load="lazy" />
+    <NuxtImg src="/aa.png" sizes="100vw sm:400px" quality="100" loading="lazy" @load="lazy" />
+    <NuxtImg src="/aa.png" sizes="100vw sm:600px" quality="100" loading="lazy" @load="lazy" />
   </div>
 </template>
 
@@ -49,7 +48,7 @@ const handleAddItem = () => {
 };
 
 const lazy = () => {
-  console.log('lazy loading..');
+  console.log('로딩 완료');
 };
 </script>
 
