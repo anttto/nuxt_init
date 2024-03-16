@@ -11,13 +11,12 @@ npm run dev
 npm run build
 ```
 
-### Props & Emit (with Computed) 
-> 부모와 자식 컴포넌트 간의 유연하고 효율적인 데이터 전달을 목적으로 함 
-<img width="640" alt="image" src="https://github.com/anttto/nuxt_init/assets/57241573/bc5190ed-7060-4fda-b5a4-9887e313b778">
+### Props & Emit (with Computed)
 
+> 부모와 자식 컴포넌트 간의 유연하고 효율적인 데이터 전달을 목적으로 함
+> <img width="640" alt="image" src="https://github.com/anttto/nuxt_init/assets/57241573/bc5190ed-7060-4fda-b5a4-9887e313b778">
 
 <br></br>
-
 
 ## Nuxt3 ESLINT & PRETTIER Minimal Starter
 
@@ -38,6 +37,7 @@ npm i -D eslint prettier typescript eslint-config-airbnb-base eslint-config-pret
 <br></br>
 
 #### (2) NUXT기반 eslint & prettier 모듈 및 플러그인 설치
+
 ```bash
 
 # eslint 설정 파일 생성 및 내용 삽입
@@ -70,3 +70,12 @@ export default defineNuxtConfig({
     },
 
 ```
+
+1. 전화번호를 입력한다.
+2. 인증번호 받기를 누른다.
+3. 인증번호 api 호출한다.
+4. 인증번호 를 전화기로 받는다.
+5. 인증번호 입력 란에 인증번호를 입력한다.
+6. 전송된 인증번호와 입력한 인증번호가 일치하면 인증번호를 view에 박아주고 완료
+
+7. 이메일을 입력한다.

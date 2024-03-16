@@ -6,18 +6,24 @@
         {{ data.items.length }}
       </em>
     </h3>
-    <Child :prop-data="data" @new-obj="handleAddItem" />
+    <Child v-if="isLogin" :prop-data="data" @new-obj="handleAddItem" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { reactive } from 'vue';
+import { storeToRefs } from 'pinia';
+import { useLoginStore } from '~/store/loginStore';
+
+const loginStore = useLoginStore();
+const { isLogin, user } = storeToRefs(loginStore);
 
 const data = reactive({
   name: '도사은',
   items: ['양손검2', '십자방패2'],
 });
 
+// console.log(user.value);
 const handleAddItem = (newItem: string) => {
   console.log('Emit Data :', newItem);
   data.items = [...data.items, newItem];

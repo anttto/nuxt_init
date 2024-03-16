@@ -4,6 +4,10 @@
     <ul>
       <li v-for="(obj, idx) in computedItem" :key="idx">{{ obj }}</li>
     </ul>
+    <br />
+    <hr />
+    <br />
+    <hr />
     <form action="" @submit.prevent="handleAddItem">
       <input v-model="newItemName" type="text" />
       <button type="submit">부모에게 데이터 올리기 (Emit)</button>
@@ -54,7 +58,7 @@ const handleAddItem = () => {
 };
 
 const lazy = () => {
-  console.log('로딩 완료');
+  //   console.log('로딩 완료');
 };
 </script>
 
