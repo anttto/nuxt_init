@@ -10,8 +10,8 @@ export default defineEventHandler(async (event) => {
   // 호출 에러 던지기
   if (!user) {
     console.log('user', user);
-    returnCode = 1;
     console.log('fail request', returnCode);
+    returnCode = 1;
     throw createError({
       statusCode: 401,
       statusMessage: 'Wrong Phone Number',

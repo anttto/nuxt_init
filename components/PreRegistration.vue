@@ -74,6 +74,7 @@ const requestVerificationCode = async () => {
 // 인증번호 확인
 const requestConfirmVerificationCode = async () => {
   try {
+    // 매게변수 어떤 파라미터를 갖는지 체크 (20240326)
     await confirmCode(formData.value.number, formData.value.vcode);
     console.log(verifiedStatus.value);
   } catch {

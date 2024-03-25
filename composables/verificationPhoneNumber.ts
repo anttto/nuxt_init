@@ -5,6 +5,7 @@ export const useVerificationPhoneNumber = () => {
   const verified = ref(false); // 인증번호 수신 여부
 
   const requestCodeFc = async (number) => {
+    // 실제에서는 이 곳에 api 호출 로직을 작성 (20240326)
     const data = await $fetch('/api/verified', {
       method: 'POST',
       body: {

@@ -10,24 +10,24 @@ export default defineEventHandler(async (event) => {
   //   console.log(typeof user.verifiedCode);
   //   console.log(typeof vcode);
 
-  const codeConfirm = String(user.verifiedCode) === String(vcode);
-  console.log(codeConfirm);
+  const confirmedCode = String(user.verifiedCode) === String(vcode);
+  //   console.log(confirmedCode);
 
   // 호출 에러 던지기
-  if (codeConfirm === false) {
+  if (confirmedCode === false) {
     returnCode = 1;
     console.log('fail request', returnCode);
-    // throw createError({
-    //   statusCode: 401,
-    //   statusMessage: 'Wrong Phone Number',
-    // });
+    throw createError({
+      statusCode: 401,
+      statusMessage: 'Wrong Phone Number',
+    });
   } else {
     returnCode = 0;
     console.log('success request', returnCode);
   }
 
   return {
-    codeConfirm,
+    // confirmedCode,
     returnCode,
   };
 });
