@@ -39,7 +39,7 @@
           />
         </label>
       </div>
-      <button class="mt-10 border px-10 py-2 bg-gray-700 text-white" type="submit">Submit</button>
+      <button class="mt-10 border px-10 py-2 bg-gray-600 text-white" type="submit">Submit</button>
     </form>
   </div>
 </template>
@@ -58,14 +58,8 @@ const { confirmCode, verifiedStatus } = useConfirmVerification(); // 인증번�
 const requestVerificationCode = async () => {
   try {
     await requestCodeFc(formData.value.number);
-    // console.log(verifiedCode.value);
-    // if (verifiedCode.value !== undefined) {
-    //   verified.value = true;
-    // }
     console.log(verifiedCode.value);
-
     console.log(verified.value);
-    // verified.value = verifiedCode;
   } catch {
     console.log(Error);
   }
